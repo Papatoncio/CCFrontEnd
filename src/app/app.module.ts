@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { NovedadesComponent } from './pages/novedades/novedades.component';
 import { LanzamientoComponent } from './pages/lanzamiento/lanzamiento.component';
+import { NgDynamicBreadcrumbModule } from 'ng-dynamic-breadcrumb';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,10 @@ import { LanzamientoComponent } from './pages/lanzamiento/lanzamiento.component'
     HomeComponent,
     FooterComponent,
     NovedadesComponent,
-    LanzamientoComponent
+    LanzamientoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgDynamicBreadcrumbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
